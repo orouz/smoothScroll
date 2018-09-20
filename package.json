@@ -1,0 +1,19 @@
+{
+  "name": "smoothscroll",
+  "version": "1.0.0",
+  "description": "simple smooth scrolling to elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/orouz/smoothScroll.git"
+  },
+  "author": "Or Ouziel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orouz/smoothScroll/issues"
+  },
+  "homepage": "https://github.com/orouz/smoothScroll#readme"
+}
