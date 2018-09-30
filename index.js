@@ -2,7 +2,7 @@ export default function smoothScroll(
   target,
   container = document.documentElement,
   dur = 330,
-  ease = linear
+  ease = easeInOutQuart
 ) {
   const start = container.scrollTop
   const end = target.getBoundingClientRect().top
@@ -22,6 +22,8 @@ export default function smoothScroll(
   loop(0)
 }
 
-function linear(t, b, c, d) {
-  return (c * t) / d + b
+// https://github.com/danro/jquery-easing/blob/master/jquery.easing.js
+function easeInOutQuart(t, b, c, d) {
+  if ((t /= d / 2) < 1) return (c / 2) * t * t * t * t + b
+  return (-c / 2) * ((t -= 2) * t * t * t - 2) + b
 }
